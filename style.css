@@ -38,6 +38,9 @@ body{
     padding: 0 30px;
    
   }
+  .hidden{
+    display: none !important;
+  }
   .main-content{
     padding-left: 270px;
   }
@@ -274,6 +277,288 @@ h3.profession{
     transform: scale(1.05);
 
 }
+.shadow-dark{
+    box-shadow:0 0 20px rgba(48,46,77,0.15);
+}
+
+/*About page css*/
+.section .contain{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    
+
+}
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+
+}
+.section-title h2::before{
+    content: '';
+    width:50px ;
+    background: var(--skin-color);
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+}
+.section-title h2::after{
+    content: '';
+    width:25px ;
+    background: var(--skin-color);
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+
+}
+.about .about-content{
+    flex: 0 0 100%;
+    
+    max-width: 100%;
+}
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    
+}
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom:15px ;
+    color: var(--text-black-900);
+    font-weight: 700;
+
+}
+.about .about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about .about-content .personal-info{
+    flex: 0 0 60%;
+    width: 60%;
+    /*background: red;*/
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    width: 50%;   
+}
+.about .about-content .personal-info .info-item p{
+       font-weight: 600;
+       padding: 10px 0;
+       font-size: 17px;
+       color: var(--text-black-900);
+       border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item p span{
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+
+}
+.about .about-content .personal-info .button{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .button .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+}
 
 
+.about .about-content .skills{
+    flex: 0 0 40%;
+    width: 40%;
+    /*for check use theese colors
+    background: red;*/
+    margin-top: 40px;
+}
+.about .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+.about .about-content .skills .skill-item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item{
+    margin-bottom: 25px;
+}
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    width: calc(var(--width) * 1%);
+    background-color: var(--skin-color);
 
+}
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right: 0;
+    color: var(--text-black-900);
+    top: -40px;
+    font-weight: 400;
+    line-height: 40px;
+    
+}
+.about .about-content .education,
+.about .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+    
+}
+.about .about-content .experience{
+    
+}
+.about .about-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .timline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.about .about-content .timline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timline .timline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timline .timline-item:last-child{
+    padding-bottom: 0;
+}
+.about .about-content .timline .timline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+
+}
+.about .about-content .timline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.about .about-content .timline .timline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about .about-content .timline .timline-date .fa{
+    margin-right: 5px;
+}
+.about .about-content .timline .timline-title{
+    font-weight: 700;
+    font-size:18px ;
+    margin-bottom: 15px;
+    text-transform:capitalize;
+    color: var(--text-black-900);
+}
+.about .about-content .timline .timline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+/*services*/
+.service .contain{
+    padding bottom: 40px;: ;
+
+}
+.service .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.service .service-item .service-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.35 ease;
+}
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.service .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+
+}
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition:  all 0.3s ease;
+}
+.service .service-item .service-item-inner:hover .icon{
+    background: var(--skin-color);
+}
+.service .service-item .service-item-inner:hover .icon .fa{
+    font-size: 25px;
+    color: white;
+}
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom:15px ;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+
+}
