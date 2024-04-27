@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+
+    
+
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style-switcher.css">
 </head>
+
 <body>
     <!--Main  container Part Start.-->
 
@@ -34,7 +39,7 @@
         <!--Main content start-->
         <div class="main-content">
             <!--Home section start-->
-            <section class="home section hidden">
+            <section class="home section ">
                 <div class="contain">
                     <div class="row">
                         <div class="home-info padd-15 ">
@@ -53,7 +58,7 @@
             </section>  
             <!--Home section end-->
             <!--About Section Start-->
-            <section class="about section hidden">
+            <section class="about section ">
                 <div class="contain">
                     <div class="row"> 
                         <div class="section-title padd-15">
@@ -142,6 +147,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             
                            </div>
                            <div class="row">
@@ -230,7 +236,7 @@
 
             <!--About Section end-->
             <!--Services section Start-->
-            <section class="service section hidden">
+            <section class="service section ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -317,7 +323,7 @@
             </section>
             <!--Services section end-->
             <!--Portfolio section start-->
-            <section class="Portfolio section hidden">
+            <section class="Portfolio section ">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -470,6 +476,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--contact form end-->
                 </div>
             </section>
 
@@ -478,16 +485,29 @@
 
         </div>
         <!--Main content end-->
+        <!--style switcher start-->
+        <div class="style-switcher">
+            <div class="style-switcher-togler s-icon">
+                <i class="fas fa-cog fa-skin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas fa-moon"></i>
+            </div>
+            <h4>Theme Colors</h4>
+            <div class="colors">
+                <span class="color" onclick="setActiveStyle('color')"></span>
+                <span class="color-1" onclick="setActiveStyle('color1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color4')"></span>
+            </div>
+        </div>
+
+        <!--style switcher end-->
 
 
     </div>
     <!--Main  container Part end.-->
-    
-
-
-
-
-
     <script src="index.js"></script>
 </body>
         
